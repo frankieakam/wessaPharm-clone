@@ -7,4 +7,4 @@ This cloning has no intention to provoke the originality of wessapharm.com.
 
 ## Technologies Used
 
-![](/assets/react-logo.png)
+![](./assets/react-logo.png)
