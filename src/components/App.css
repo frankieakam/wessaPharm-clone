@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", serif;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.header {
+  background-color: white;
+  color: white;
+  padding: 10px 0;
+  margin: -25px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.contact-info {
+  background-color: green;
+  padding: 1px 70px;
+  text-align: left;
+  display: flex;
+}
+
+.contact-info p {
+  padding-top: 5px;
+  padding-left: 40px;
+  margin-top: 15px;
+  margin-left: -70px;
+  margin-bottom: 10px;
+  margin-right: auto;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.social-icons {
+  gap: 15px; 
+  margin-right: -20px;
+}
+
+.social-icons svg {
+  fill: white; 
+  cursor: pointer;
+  margin: 20px 10px auto 10px;
+}
+
+.social-icons svg:hover {
+  fill: black; 
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  margin-left: 40px;
+  margin-top: -9px;
+  margin-bottom: 1px;
+}
+
+.navbar {
+  background-color: white;
+  margin-top: 25px;
+  display: flex;
+  gap: 50px;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.navbar ul li {
+  margin: -5px 8px auto 8px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: orangered;
+  padding: 10px 15px;
+  font-family: "Raleway", serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.navbar ul li a:hover {
+  border-bottom: 7px solid black;
+  padding-bottom: 18px;
+  transition: border-bottom 0.5s ease-in-out;
+  color: green;
+}
+
+.navbar .welcome a {
+  color: green;
+  border-bottom: 7px solid black;
+  padding-bottom: 18px;
+}
+
+.main-section {
+  display: flex;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/offerings-bg.jpg);
+  margin: 112px 90px 0 90px;
+}
+
+
+.main-section .left-side, .main-section .right-side {
+  flex: 1;
+}
+
+.main-section .left-side h2 {
+  font-size: 24px;
+  color: orangered;
+  margin-top: 70px;
+}
+
+.main-section .left-side h1 {
+  font-size: 48px;
+  font-family: "Raleway", serif;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.main-section .right-side {
+  padding: 20px;
+  text-align: center;
+}
+
+.main-section .right-side h2 {
+  font-size: 32px;
+}
+
+.main-section .right-side h3 {
+  font-size: 24px;
+}
+
+.offerings {
+  margin-top: 60px;
+}
+
+.offerings ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.offerings ul li {
+  margin: 10px 0;
+  font-size: 17px;
+  font-weight: 600;
+  border-bottom: 1px solid orangered;
+  padding-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 35px;
+  margin-bottom: 70px;
+  margin-right: 70px;
+}
+
+.whatsapp-btn {
+  background-color: green;
+  border-radius: 10px;
+  padding: 5px 15px;
+  font-weight: 900;
+  display: flex;
+  gap: 10px;
+}
+
+.services-btn {
+  border: orangered 1px solid;
+  background: none;
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin-top: -15px;
+  font-weight: 900;
+  display: flex;
+  gap: 10px;
+}
+
+.pharmacist-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 110px;
+  margin-right: -60px;
+  padding: 20px 0;
+  background: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out; 
+  margin: 0;
+}
+
+.slide-in-from-left {
+  transform: translateX(-100%);
+  animation: slideInFromLeft 0.5s forwards;
+}
+
+.slide-in-from-right {
+  transform: translateX(100%);
+  animation: slideInFromRight 0.5s forwards;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: space-between;
+  max-width: 30px;
+  gap: 15px;
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0;
+}
+
+.thumbnails button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.thumbnails button:disabled {
+  cursor: not-allowed;
+}
+
+.thumbnails .thumbnail {
+  width: 70px;
+  height: 70px;
+}
+
+.quality-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 50px;
+  background-color: white;
+}
+
+.quality-text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.quality-text h2 {
+  font-size: 40px;
+  margin: 40px 0 0;
+  color: green;
+}
+
+.quality-text .sub-title {
+  color: orangered;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.quality-text p {
+  line-height: 1.6;
+  color: black;
+  margin-top: 30px;
+}
+
+.quality-image {
+  flex: 1;
+  position: relative;
+}
+
+.quality-image img {
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 5px;
+}
+
+.services-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 0;
+  background-color: white;
+}
+
+.service-item {
+  flex: 1;
+  position: relative;
+  margin: 0 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.service-image {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.fixed-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.service-text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(31, 103, 5, 0.564);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.service-text-overlay h3 {
+  margin: 0;
+  font-size: 24px;
+  font-family: "Nunito Sans", serif;
+  font-weight: 600;
+  color: black;
+}
+
+.service-text-overlay p {
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+.contact-btn, .email-btn {
+  background-color: green;
+  margin: 5px 0;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.contact-btn svg, .email-btn svg {
+  margin-right: 10px;
+}
+
+.experience-section {
+  text-align: center;
+  padding: 20px 40px 50px 40px;
+  background-color: white;
+}
+
+.experience-section h5 {
+  color: gray;
+  font-weight: 400;
+  text-align: left;
+  margin-top: -25px;
+  margin-left: 20px;
+  font-style: italic;
+}
+
+.experience-section h2 span {
+  font-style: italic;
+}
+
+.experience-section h2 {
+  font-size: 25px;
+  font-family: "Raleway", serif;
+  font-weight: 600;
+  margin-top: -20px;
+  margin-bottom: 1px;
+  margin-left: 20px;
+  color: black;
+  text-align: left;
+  position: relative;
+}
+
+.experience-section h2::after {
+  content: '';
+  position: absolute;
+  right: 20px; 
+  top: 50%;
+  width: 70%; 
+  height: 1px; 
+  background-color: gray; 
+  transform: translateY(-50%); 
+}
+
+.experience-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.experience-item {
+  flex: 1 1 200px; 
+  margin: 10px 20px 10px 20px;
+  text-align: center;
+}
+
+.experience-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.experience-item span {
+  font-style: italic;
+}
+
+.experience-item p {
+  margin-top: 10px;
+  color: black;
+  font-weight: 500;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 40px 60px 40px 60px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.social-icon {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon a {
+  display: inline-block;
+  color: green;
+}
+
+.social-icon a:hover {
+  color: white;
+}
+
+.back-to-top {
+  background: green;
+  padding: 10px 15px;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  color: orangered; 
+  margin-top: -15px;
+  outline: none;
+}
+
+.back-to-top {
+  background: green;
+  padding: 10px 12px;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  color: orangered; 
+  margin-top: -15px;
+}
+
+.back-to-top:focus {
+  outline: none;  
+}
